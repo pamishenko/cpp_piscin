@@ -1,0 +1,5 @@
+*.o
+*.json
+*.pdf
+animals
+.DS_Store
