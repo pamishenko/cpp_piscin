@@ -3,12 +3,19 @@ NAME = bureaucrat
 HEADER_FOLDER	=	./includes/
 HEADER_FILES	=	\
 					${HEADER_FOLDER}Bureaucrat.hpp \
-					${HEADER_FOLDER}Defines.hpp
-
+					${HEADER_FOLDER}AForm.hpp \
+					${HEADER_FOLDER}Defines.hpp \
+					${HEADER_FOLDER}ShrubberyCreationForm.hpp \
+					${HEADER_FOLDER}RobotomyRequestForm.hpp \
+					${HEADER_FOLDER}PresidentialPardonForm.hpp 
 
 SRC_DIR = src/
 SRC		=	\
 			Bureaucrat.cpp \
+			AForm.cpp \
+			ShrubberyCreationForm.cpp \
+			RobotomyRequestForm.cpp \
+			PresidentialPardonForm.cpp \
 			main.cpp
 
 CC				=	c++

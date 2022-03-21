@@ -3,12 +3,14 @@ NAME = bureaucrat
 HEADER_FOLDER	=	./includes/
 HEADER_FILES	=	\
 					${HEADER_FOLDER}Bureaucrat.hpp \
-					${HEADER_FOLDER}Defines.hpp
+					${HEADER_FOLDER}Form.hpp \
+					${HEADER_FOLDER}Defines.hpp 
 
 
 SRC_DIR = src/
 SRC		=	\
 			Bureaucrat.cpp \
+			Form.cpp \
 			main.cpp
 
 CC				=	c++

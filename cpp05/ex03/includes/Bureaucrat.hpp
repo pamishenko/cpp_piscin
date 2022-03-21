@@ -6,7 +6,7 @@
 /*   By: ttanja <ttanja@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/20 14:35:06 by ttanja            #+#    #+#             */
-/*   Updated: 2022/03/21 22:44:36 by ttanja           ###   ########.fr       */
+/*   Updated: 2022/03/21 22:43:02 by ttanja           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define BUREAUCRAT_HPP
 
 #include <iostream>
+#include "AForm.hpp"
+#include "../includes/Defines.hpp"
+
+ class AForm;
 
 class Bureaucrat {
 private:
@@ -50,7 +54,8 @@ public:
 	int			getGrade() const;
 	void		incGrade();
 	void		decGrade();
-
+	void		signForm(AForm &form);
+	void		executeForm(AForm const &form);
 };
 
 std::ostream &operator<<(std::ostream &outputFile, Bureaucrat const &bureaucrat);
