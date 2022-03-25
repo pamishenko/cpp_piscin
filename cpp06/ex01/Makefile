@@ -1,14 +1,14 @@
-NAME = bureaucrat
+NAME = convert
 
 HEADER_FOLDER	=	./includes/
 HEADER_FILES	=	\
-					${HEADER_FOLDER}Bureaucrat.hpp \
-					${HEADER_FOLDER}Defines.hpp
+					${HEADER_FOLDER}serialize.hpp \
+					${HEADER_FOLDER}defines.hpp
 
 
 SRC_DIR = src/
 SRC		=	\
-			Bureaucrat.cpp \
+			serialize.cpp \
 			main.cpp
 
 CC				=	c++
@@ -21,7 +21,7 @@ OBJS 		= 	$(addprefix $(OBJS_DIR), $(OBJ))
 $(OBJS_DIR)%.o :	$(SRC_DIR)%.cpp
 	mkdir -p $(OBJS_DIR)
 	$(CC) $(FLAGS) -c $< -o $@
-kefil
+
 all: $(NAME)
 
 $(NAME): $(OBJS) $(HEADER_FILES) 
