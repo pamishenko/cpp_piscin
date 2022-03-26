@@ -1,0 +1,6 @@
+*.o
+*.html
+*.pdf
+template
+*.json
+*_Store*
